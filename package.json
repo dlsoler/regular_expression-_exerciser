@@ -4,8 +4,9 @@
   "private": true,
   "description": "Regular Expression Exerciser",
   "author": "Diego Luis Soler",
+  "license": "GPLv3",
   "keywords": [
-    "gatsby"
+    "regexp", "regular expression","gatsby", "grommet", "react"
   ],
   "scripts": {
     "develop": "gatsby develop",
