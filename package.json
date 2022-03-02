@@ -6,7 +6,11 @@
   "author": "Diego Luis Soler",
   "license": "GPLv3",
   "keywords": [
-    "regexp", "regular expression","gatsby", "grommet", "react"
+    "regexp",
+    "regular expression",
+    "gatsby",
+    "grommet",
+    "react"
   ],
   "scripts": {
     "develop": "gatsby develop",
@@ -16,6 +20,8 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "dexie": "^3.2.1",
+    "dexie-react-hooks": "^1.1.1",
     "gatsby": "^4.7.2",
     "gatsby-plugin-image": "^2.7.0",
     "gatsby-plugin-manifest": "^4.7.0",
@@ -28,5 +34,9 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/styled-components": "^5.1.23",
+    "eslint-plugin-react": "^7.29.1"
   }
 }
