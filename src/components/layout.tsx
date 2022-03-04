@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Grommet, Header, Heading, Text } from "grommet";
+import { Github, Trigger } from 'grommet-icons';
 
 const theme = {
   global: {
@@ -34,13 +35,22 @@ function Layout({ children } : any) {
         </Box>
         <Box
           tag="footer"
-          direction="row"
+          direction="column"
           align="center"
           alignSelf="center"
           pad={{ vertical: 'large', horizontal: 'medium' }}
           elevation="medium"
         >
-          <Text>Powered by <a href="https://reactjs.org/" title="React">React</a>, <a href="https://www.gatsbyjs.com/" title="Gatsby">Gatsby</a> and <a href="https://grommet.io" title="Grommet">Grommet</a></Text>
+          <Box direction="row" gap="small"  pad={{ vertical: 'small', horizontal: 'medium' }} >
+            <Trigger />
+            <Text>Powered by <a href="https://reactjs.org/" title="React">React</a>, <a href="https://www.gatsbyjs.com/" title="Gatsby">Gatsby</a> and <a href="https://grommet.io" title="Grommet">Grommet</a></Text>
+          </Box>
+
+          <Box direction="row" gap="small" pad={{ vertical: 'small', horizontal: 'medium' }} >
+            <Github />
+            <Text>Repository: <a href="https://github.com/dlsoler/regular_expression-_exerciser" title="Github respistory">https://github.com/dlsoler/regular_expression-_exerciser</a></Text>
+          </Box>
+          
         </Box>
       </main>
     </Grommet>
