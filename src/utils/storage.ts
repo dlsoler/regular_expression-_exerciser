@@ -21,3 +21,7 @@ export async function addRegExp(pattern: string, regExplags: Array<string> | str
   const flags = typeof regExplags === 'string' ? regExplags : regExplags.join('');
   return await db.table(TABLE_NAME).add({pattern, flags});
 }
+
+export async function deleteRegExp(id: number) {
+  return await db.table(TABLE_NAME).delete(id);
+}
