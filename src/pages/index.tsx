@@ -30,10 +30,10 @@ const IndexPage = ({ location }: any) => {
   
 
   React.useEffect(() => {
-    if (location.state.pattern) {
+    if (location && location.state && location.state.pattern) {
       setPattern(location.state.pattern);
     }
-    if(location.state.flags) {
+    if(location && location.state && location.state.flags) {
       const flagsArr = location.state.flags.split('');
       setFlags(flagsArr);
     }
